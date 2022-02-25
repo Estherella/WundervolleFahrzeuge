@@ -1,3 +1,5 @@
+package Fahrzeuge;
+
 public class InDerLuft extends Fahrzeug {
     private String airline;
     private int aktuelleHoehe;
@@ -37,7 +39,7 @@ public class InDerLuft extends Fahrzeug {
 
 
     @Override
-    public void gibFortbewegung() {
-        System.out.println("Ich fliege!");
+    public String gibFortbewegung() {
+        return "Ich fliege!";
     }
 }

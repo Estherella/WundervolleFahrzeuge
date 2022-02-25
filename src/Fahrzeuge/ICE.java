@@ -1,3 +1,5 @@
+package Fahrzeuge;
+
 public class ICE extends AufSchienen implements Elektrisch{
     private String name;
     private String ankunftszeit;

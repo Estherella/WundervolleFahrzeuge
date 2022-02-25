@@ -1,3 +1,5 @@
+package Fahrzeuge;
+
 public abstract class AufSchienen extends Fahrzeug{
     private String abfahrtsort;
     private String ankunftsort;
@@ -19,8 +21,8 @@ public abstract class AufSchienen extends Fahrzeug{
     };
 
     @Override
-    public void gibFortbewegung(){
-        System.out.println("Ich fahre auf Schienen!");
+    public String gibFortbewegung(){
+        return "Ich fahre auf Schienen!";
     }
 
 }

@@ -1,3 +1,5 @@
+package Fahrzeuge;
+
 public abstract class Fahrzeug {
     // Hier folgen die Attribute:
     private int geschwindigkeit;
@@ -19,7 +21,7 @@ public abstract class Fahrzeug {
         this.antrieb = antrieb;
     }
     // Hier folgen die Methoden
-    public abstract void gibFortbewegung();
+    public abstract String gibFortbewegung();
 
     public int getGeschwindigkeit() {
         return geschwindigkeit;
@@ -66,7 +68,7 @@ public abstract class Fahrzeug {
 
     @Override
     public String toString() {
-        return "Fahrzeug{" +
+        return "Fahrzeuge.Fahrzeug{" +
                 "geschwindigkeit=" + geschwindigkeit +
                 ", farbe='" + farbe + '\'' +
                 ", hersteller='" + hersteller + '\'' +

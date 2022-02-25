@@ -1,3 +1,5 @@
+package Fahrzeuge;
+
 public class Auto extends AufDerStrasse implements Elektrisch, Verbrennungsmotor{
     private String modell;
     private int baujahr;
@@ -31,7 +33,7 @@ public class Auto extends AufDerStrasse implements Elektrisch, Verbrennungsmotor
 
     @Override
     public void laden() {
-        if (this.getAntrieb() == "Elektrisch"){
+        if (this.getAntrieb() == "Fahrzeuge.Elektrisch"){
             System.out.println("Die 2. Straße rechts rein und dort ist eine Ladesäule.");
         } else {
             System.out.println("Mit dem Motor lieber eine Tankstelle aufsuchen.");
@@ -40,7 +42,7 @@ public class Auto extends AufDerStrasse implements Elektrisch, Verbrennungsmotor
 
     @Override
     public void tanken() {
-        if (this.getAntrieb() == "Verbrennungsmotor"){
+        if (this.getAntrieb() == "Fahrzeuge.Verbrennungsmotor"){
             System.out.println("In 100m geradeaus gibt es eine Tankstelle.");
         } else {
             System.out.println("Zum Glück hat die Tankstelle da vorne auch eine Ladesäule für E-Fahrzeuge.");

@@ -1,3 +1,5 @@
+package Fahrzeuge;
+
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
@@ -28,7 +30,7 @@ public class AufDerStrasse extends Fahrzeug{
     }
 
     @Override
-    public void gibFortbewegung() {
-        System.out.println("Ich fahre auf der Straße!");
+    public String gibFortbewegung() {
+        return "Ich fahre auf der Straße!";
     }
 }

@@ -1,3 +1,5 @@
+package Fahrzeuge;
+
 public class Museumslok extends AufSchienen implements Verbrennungsmotor{
     private String name;
     private int tankanzeige;
